@@ -1,0 +1,161 @@
+.box {
+	border: 1px solid #CCC;
+	padding: 40px 25px;
+	background: #FFF;
+	max-width: 400px;
+	position: relative;
+	border-radius: 3px;
+  margin: 0 auto;
+}
+.box.ofh {
+  overflow: hidden;
+}
+/* Ribbon 1 */
+.top-cross-ribbon {
+	background: #EA4335;
+	padding: 7px 50px;
+	color: #FFF;
+	position: absolute;
+	top: 0;
+	right: -50px;
+	transform: rotate(45deg);
+	border: 1px dashed #FFF;
+	box-shadow: 0 0 0 3px #EA4335;
+	margin: 5px;
+}
+
+/* Ribbon 2*/
+.arrow-ribbon {
+  background: #EA4335;
+  color: #FFF;
+  padding: 7px 50px;
+  position: absolute;
+  bottom: 10px;
+  right: -1px;
+}
+.arrow-ribbon:before {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    content: "";
+    left: -12px;
+    border-top: 15px solid transparent;
+    border-right: 12px solid #EA4335;
+    border-bottom: 15px solid transparent;
+    width: 0;
+}
+
+/* Ribbon 3 */
+.bottom-ribbon {
+  background: #EA4335;
+  color: #FFF;
+  padding: 7px 50px;
+  position: absolute;
+  bottom: 10px;
+  right: -1px;
+  border-radius: 20px 0 0 20px;
+}
+.bottom-ribbon:after {
+  position: absolute;
+  right: -25px;
+  top: -18px;
+  bottom: 0;
+  z-index: 9999;
+  content: "";
+  border-bottom: 43px solid #EA4335;
+  border-left: 38px solid transparent;
+  border-right: 20px solid transparent;
+  width: 42px;
+  z-index: -1;
+}
+
+/*Ribbon 4 */
+.half-circle-ribbon {
+  background: #EA4335;
+  color: #FFF;
+  height: 60px;
+  width: 60px;
+  text-align: right;
+  padding-top: 10px;
+  padding-right: 10px;
+  position: absolute;
+  top: -1px;
+  right: -1px;
+  flex-direction: row;
+  border-radius: 0 0 0 100%;
+  border: 1px dashed #FFF;
+  box-shadow: 0 0 0 3px #EA4335;
+}
+
+/* Ribbon 5 */
+.cross-shadow-ribbon {
+  position: absolute;
+  background: #EA4335;
+  top: -15px;
+  padding: 10px;
+  margin-left: 15px;
+  color: #FFF;
+  border-radius: 0 0 2px 2px;
+}
+.cross-shadow-ribbon:before {
+  content: "";
+  position: absolute;
+  left: -15px;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 0;
+  height: 0;
+  border-bottom: 15px solid #A42F25;
+  border-left: 15px solid transparent;
+}
+
+/* Ribbon 6 */
+.cover-ribbon {
+  height: 115px;
+  width: 115px;
+  position: absolute;
+  right: -8px;
+  top: -8px;
+  overflow: hidden;
+}
+.cover-ribbon .cover-ribbon-inside {
+  background: #EA4335;
+  color: #FFF;
+  transform: rotate(45deg);
+  position: absolute;
+  right: -35px;
+  top: 15px;
+  padding: 10px;
+  min-width: 127px;
+  text-align: center;
+}
+.cover-ribbon .cover-ribbon-inside:before {
+  width: 0;
+  height: 0;
+  border-left: 7px solid transparent;
+  border-right: 7px solid transparent;
+  border-bottom: 10px solid #992C23;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  content: "";
+  top: 35px;
+  transform: rotate(-45deg);
+}
+.cover-ribbon .cover-ribbon-inside:after {
+  width: 0;
+  height: 0;
+  border-top: 7px solid transparent;
+  border-left: 10px solid #992C23;
+  border-bottom: 7px solid transparent;
+  position: absolute;
+  left: 95%;
+  right: 0;
+  top: 34px;
+  bottom: 0;
+  content: "";
+  transform: rotate(-45deg);
+}
